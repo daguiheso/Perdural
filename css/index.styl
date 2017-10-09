@@ -9,32 +9,51 @@ section
 	flex-wrap wrap
 	a
 		display block
-		margin 10px 0
+		margin 30px 18px
 		figure
 			img
+				// max-height 70px
 				max-width 200px
 		&:nth-child(2)
 			figure
 				img
 					max-width 105px
+		&:nth-child(3)
+			figure
+				img
+					max-width 130px
 		&:nth-child(5)
 			figure
 				img
 					max-width 150px
-
+.footer
+	padding-top 0 !important
+	margin-top 40px
+	&-content
+		padding 0 20px
+	&-socials
+		margin 0
+		i
+			color white
+	.wrapper
+		display flex
+		justify-content center
+		align-items center
+		margin-bottom 25px
 #history
 	.imgP
 		max-width 250px
 		width 100%
 		display block
 		margin 15px auto
-
+.navbar-custom .nav
+	padding 0
 .navbar-brand
 	padding 0 !important
 	img
 		position relative
-		top 10px
-		width 150px
+		top 5px
+		width 98px
 		@media screen and (max-width: 768px)
 			width auto
 			height 80%
@@ -44,3 +63,47 @@ section
 .simulacrum
 	img
 		max-width 260px
+
+.perducar
+	// .gallery
+	// 	background blue
+	.mediaVideo
+		max-width 70%
+		margin 0 auto
+		&__contenedor
+			height 0
+			overflow hidden
+			padding-bottom 56.25%
+			position relative
+			iframe
+				height 100%
+				left 0
+				position absolute
+				top 0
+				width 100%
+	.services-item
+		padding 20px 20px
+	#store
+		.caption
+			h3
+				// min-height 78px
+				font-size 20px
+				text-align center
+			a
+				display block
+				box-shadow: 0 5px #158a72
+				border-radius 5px
+				background #00bc95
+				border 0
+				color white
+				font-weight bold
+				position relative
+				&:hover
+					border 0
+					top 2px
+					box-shadow: 0 3px #158a72
+	.rslides
+		border 2px solid #ddd !important
+		width 100%
+		margin 0 auto
+
