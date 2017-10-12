@@ -1,9 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+
 body, html
 	font-size 16px
 
 section
 	padding-top 30px
 	padding-bottom 30px
+
+.title
+	color #29abe2
+
+.u
+	&__button
+		box-shadow: 0 5px #158a72
+		border-radius 5px
+		background #00bc95
+		border 0
+		color white
+		font-weight bold
+		position relative
+		&:hover
+			border 0
+			top 2px
+			box-shadow: 0 3px #158a72
+	&__mediaVideo
+		max-width 70%
+		margin 0 auto
+		&--contenedor
+			height 0
+			overflow hidden
+			padding-bottom 56.25%
+			position relative
+			iframe
+				height 100%
+				left 0
+				position absolute
+				top 0
+				width 100%
+
 
 .business
 	display flex
@@ -70,20 +104,7 @@ section
 .perducar
 	// .gallery
 	// 	background blue
-	.mediaVideo
-		max-width 70%
-		margin 0 auto
-		&__contenedor
-			height 0
-			overflow hidden
-			padding-bottom 56.25%
-			position relative
-			iframe
-				height 100%
-				left 0
-				position absolute
-				top 0
-				width 100%
+
 	.services-item
 		padding 20px 20px
 	#store
@@ -94,19 +115,59 @@ section
 				text-align center
 			a
 				display block
-				box-shadow: 0 5px #158a72
-				border-radius 5px
-				background #00bc95
-				border 0
-				color white
-				font-weight bold
-				position relative
-				&:hover
-					border 0
-					top 2px
-					box-shadow: 0 3px #158a72
+				@extends .u__button
 	.rslides
 		border 2px solid #ddd !important
 		width 100%
 		margin 0 auto
 
+.perduacademy
+	ul
+		padding 0
+		list-style none
+	.products
+		display flex
+		align-items center
+		flex-wrap wrap
+		justify-content space-between
+		padding 0 0%
+		&__wrapper
+			border 1px solid #f3f3f3
+			border-radius 6px
+			width calc(50% - 6px)
+			background #42485c
+			color white
+			padding 20px 30px
+			margin-bottom 10px
+			position relative
+			&:last-child
+				width 100%
+				background url('../images/clase-pers.jpg') center no-repeat
+			.layer
+				position absolute
+				top 0
+				bottom 0
+				left 0
+				right 0
+				background rgba(0,0,0,.4)
+			.detail
+				position relative
+				z-index 2
+			h3
+				// font-family 'Kameron', serif
+				font-size 1.1em
+				color #f6d605
+				font-family: 'Lato', sans-serif
+				font-weight 900
+			p
+				color white
+			a
+				@extends .u__button
+				float right
+				margin-top 15px
+				background #f6d605
+				box-shadow 0 5px #a29014
+				color #273755
+				margin-left 8px
+				&:hover
+					box-shadow 0 3px #a29014

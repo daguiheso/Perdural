@@ -12,14 +12,14 @@ a:hover,a:focus,a:active,.social-icons i:hover,.twitter_tweet i,.twitter_tweet p
 .navbar-custom .navbar-nav>li>a:hover, .navbar-custom .navbar-nav>li>a:focus,
 .navbar-custom .navbar-nav>li>a:hover,
 .md-content h5 {
-	color: #00bc95;
+	color: #29abe2;
 }
 .btn-custom,.btn-custom-sm,.back-to-top{
-	background-color: #00bc95;
+	background-color: #29abe2;
 }
 .form-control:focus,.btn-custom,.btn-custom-sm {
-	border-color: #00bc95;
+	border-color: #29abe2;
 }
 .titleHR span {
-	background: none repeat scroll 0 0 #00bc95; 
+	background: none repeat scroll 0 0 #29abe2;
 }
