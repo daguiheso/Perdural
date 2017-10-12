@@ -3,13 +3,28 @@
 body, html
 	font-size 16px
 
+.navbar-custom
+	background rgba(84,195,237,.9)
 section
 	padding-top 30px
 	padding-bottom 30px
+nav.small
+	background rgba(84,195,237,1)
+.small .navbar-nav>li>a
+	color white
+.navbar-custom .navbar-nav>li>a
+	color white
+	font-weight bold
 
 .title
-	color #29abe2
+	color #54c3ed
+	font-size 1.9em
 
+h4
+	color #54c3ed
+	font-weight bold
+	font-size 1.2em
+	margin-bottom 25px
 .u
 	&__button
 		box-shadow: 0 5px #158a72
@@ -37,6 +52,12 @@ section
 				position absolute
 				top 0
 				width 100%
+			img
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: 3;
+				opacity: 0.3;
 
 
 .business
@@ -46,7 +67,7 @@ section
 	flex-wrap wrap
 	a
 		display block
-		margin 30px 18px
+		margin 30px
 		figure
 			img
 				// max-height 70px
@@ -137,12 +158,14 @@ section
 			width calc(50% - 6px)
 			background #42485c
 			color white
-			padding 20px 30px
 			margin-bottom 10px
 			position relative
 			&:last-child
 				width 100%
 				background url('../images/clase-pers.jpg') center no-repeat
+				padding 20px 30px
+			iframe
+				background: url(../images/logo8.png)
 			.layer
 				position absolute
 				top 0
@@ -153,8 +176,13 @@ section
 			.detail
 				position relative
 				z-index 2
+			.text
+				padding 20px 30px 25px
+				// display flex
+				// justify-content space-between
 			h3
 				// font-family 'Kameron', serif
+				margin-top 0
 				font-size 1.1em
 				color #f6d605
 				font-family: 'Lato', sans-serif
@@ -163,7 +191,6 @@ section
 				color white
 			a
 				@extends .u__button
-				float right
 				margin-top 15px
 				background #f6d605
 				box-shadow 0 5px #a29014
