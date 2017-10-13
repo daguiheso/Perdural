@@ -3,28 +3,10 @@
 body, html
 	font-size 16px
 
-.navbar-custom
-	background rgba(84,195,237,.9)
 section
 	padding-top 30px
 	padding-bottom 30px
-nav.small
-	background rgba(84,195,237,1)
-.small .navbar-nav>li>a
-	color white
-.navbar-custom .navbar-nav>li>a
-	color white
-	font-weight bold
 
-.title
-	color #54c3ed
-	font-size 1.9em
-
-h4
-	color #54c3ed
-	font-weight bold
-	font-size 1.2em
-	margin-bottom 25px
 .u
 	&__button
 		box-shadow: 0 5px #158a72
@@ -52,12 +34,7 @@ h4
 				position absolute
 				top 0
 				width 100%
-			img
-				position: absolute;
-				left: 0;
-				top: 0;
-				z-index: 3;
-				opacity: 0.3;
+
 
 
 .business
@@ -128,21 +105,28 @@ h4
 
 	.services-item
 		padding 20px 20px
+		i
+			color #555
 	#store
 		.caption
 			h3
 				// min-height 78px
-				font-size 20px
-				text-align center
+				font-size 1.1em
+				// text-align center
+				margin-top 0
+				padding 10px 0
 			a
 				display block
-				@extends .u__button
 	.rslides
 		border 2px solid #ddd !important
 		width 100%
 		margin 0 auto
 
 .perduacademy
+	.navbar-brand img
+		max-width 40px
+		position relative
+		top 7px
 	ul
 		padding 0
 		list-style none
@@ -152,20 +136,22 @@ h4
 		flex-wrap wrap
 		justify-content space-between
 		padding 0 0%
+		.line
+			border-right 1px solid #c3bdbd
+			min-height 350px
+			width 1px
 		&__wrapper
-			border 1px solid #f3f3f3
-			border-radius 6px
-			width calc(50% - 6px)
-			background #42485c
+			// border 1px solid #f3f3f3
+			width calc(47% - 2px)
+
 			color white
 			margin-bottom 10px
 			position relative
+			padding 10px
 			&:last-child
 				width 100%
 				background url('../images/clase-pers.jpg') center no-repeat
 				padding 20px 30px
-			iframe
-				background: url(../images/logo8.png)
 			.layer
 				position absolute
 				top 0
@@ -178,6 +164,9 @@ h4
 				z-index 2
 			.text
 				padding 20px 30px 25px
+				// background rgba(0,0,0,.8)
+				margin-top 5px
+				// margin-top 15px
 				// display flex
 				// justify-content space-between
 			h3
@@ -190,11 +179,6 @@ h4
 			p
 				color white
 			a
-				@extends .u__button
 				margin-top 15px
-				background #f6d605
-				box-shadow 0 5px #a29014
-				color #273755
+				color white
 				margin-left 8px
-				&:hover
-					box-shadow 0 3px #a29014

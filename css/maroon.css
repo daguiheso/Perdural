@@ -12,14 +12,60 @@ a:hover,a:focus,a:active,.social-icons i:hover,.twitter_tweet i,.twitter_tweet p
 .navbar-custom .navbar-nav>li>a:hover, .navbar-custom .navbar-nav>li>a:focus,
 .navbar-custom .navbar-nav>li>a:hover,
 .md-content h5 {
-	color: #a06081;
+	color: black;
+  font-weight: 900;
 }
 .btn-custom,.btn-custom-sm,.back-to-top{
-	background-color: #a06081;
+	background-color: #40939a;
 }
 .form-control:focus,.btn-custom,.btn-custom-sm {
-	border-color: #a06081;
+	border-color: #40939a;
 }
 .titleHR span {
-	background: none repeat scroll 0 0 #a06081; 
+	background: none repeat scroll 0 0 #ff074c;
 }
+
+.u__button {
+  box-shadow: 0 5px #555;
+  border-radius: 5px;
+  background: #333;
+  border: 0;
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+.u__button:hover {
+  border: 0;
+  top: 2px;
+  box-shadow: 0 3px #555;
+  background: #333;
+  color: white;
+}
+
+.navbar-custom {
+  background: #ff074c;
+  box-shadow: inset 0px 2px 37px -12px rgba(0,0,0,0.75);
+}
+nav.small {
+  background: #ff074c;
+  box-shadow: inset 0px 2px 37px -12px rgba(0,0,0,0.75);
+}
+.small .navbar-nav>li>a {
+  color: white;
+}
+.navbar-custom .navbar-nav>li>a {
+  color: white;
+  font-weight: bold;
+}
+
+.title {
+  color: #ff074c;
+  font-size: 1.9em;
+}
+
+/* h4
+
+color #54c3ed
+font-weight bold
+font-size 1.2em
+margin-bottom 25px */

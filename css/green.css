@@ -12,15 +12,43 @@ a:hover,a:focus,a:active,.social-icons i:hover,.twitter_tweet i,.twitter_tweet p
 .navbar-custom .navbar-nav>li>a:hover, .navbar-custom .navbar-nav>li>a:focus,
 .navbar-custom .navbar-nav>li>a:hover,
 .md-content h5 {
-	color: #42485c;
+	color: #62f3ff;
   font-weight: 900;
 }
 .btn-custom,.btn-custom-sm,.back-to-top{
-	background-color: #54c3ed;
+	background-color: #40939a;
 }
 .form-control:focus,.btn-custom,.btn-custom-sm {
-	border-color: #54c3ed;
+	border-color: #40939a;
 }
 .titleHR span {
-	background: none repeat scroll 0 0 #54c3ed;
+	background: none repeat scroll 0 0 #594692;
 }
+
+.navbar-custom {
+  background: #594692;
+  box-shadow: inset 0px 2px 37px -12px rgba(0,0,0,0.75);
+}
+nav.small {
+  background: #594692;
+  box-shadow: inset 0px 2px 37px -12px rgba(0,0,0,0.75);
+}
+.small .navbar-nav>li>a {
+  color: white;
+}
+.navbar-custom .navbar-nav>li>a {
+  color: white;
+  font-weight: bold;
+}
+
+.title {
+  color: #594692;
+  font-size: 1.9em;
+}
+
+/* h4
+
+color #54c3ed
+font-weight bold
+font-size 1.2em
+margin-bottom 25px */
