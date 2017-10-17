@@ -26,7 +26,7 @@ a:hover,a:focus,a:active,.social-icons i:hover,.twitter_tweet i,.twitter_tweet p
 }
 
 .u__button {
-  box-shadow: 0 5px #2A2696;
+  box-shadow: 0 5px #534dff;
   border-radius: 5px;
   background: #5d84e4;
   border: 0;
@@ -37,7 +37,7 @@ a:hover,a:focus,a:active,.social-icons i:hover,.twitter_tweet i,.twitter_tweet p
 .u__button:hover {
   border: 0;
   top: 2px;
-  box-shadow: 0 3px #2A2696;
+  box-shadow: 0 3px #534dff;
   background: #5d84e4;
   color: white;
 }

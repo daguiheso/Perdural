@@ -120,34 +120,39 @@ section
 	.rslides
 		border 2px solid #ddd !important
 		width 100%
-		margin 0 auto
 
 .perduacademy
 	.navbar-brand img
 		max-width 40px
 		position relative
 		top 7px
-	ul
-		padding 0
-		list-style none
+	// ul
+	// 	padding 0
+	// 	list-style none
 	.products
 		display flex
 		align-items center
 		flex-wrap wrap
 		justify-content space-between
 		padding 0 0%
+		list-style none
 		.line
 			border-right 1px solid #c3bdbd
 			min-height 350px
 			width 1px
+			@media screen and (max-width: 766px)
+				display none
 		&__wrapper
-			// border 1px solid #f3f3f3
 			width calc(47% - 2px)
-
 			color white
 			margin-bottom 10px
 			position relative
 			padding 10px
+			text-align center
+			&.left
+				text-align left
+			@media screen and (max-width: 766px)
+				width 100%
 			&:last-child
 				width 100%
 				background url('../images/clase-pers.jpg') center no-repeat
@@ -158,27 +163,29 @@ section
 				bottom 0
 				left 0
 				right 0
-				background rgba(0,0,0,.4)
+				background rgba(0,0,0,.5)
 			.detail
 				position relative
 				z-index 2
 			.text
 				padding 20px 30px 25px
-				// background rgba(0,0,0,.8)
 				margin-top 5px
-				// margin-top 15px
-				// display flex
-				// justify-content space-between
 			h3
-				// font-family 'Kameron', serif
 				margin-top 0
-				font-size 1.1em
-				color #f6d605
+				font-size 1.6em
+				color #5d84e4
 				font-family: 'Lato', sans-serif
 				font-weight 900
+				margin-bottom 20px
 			p
 				color white
 			a
 				margin-top 15px
 				color white
 				margin-left 8px
+				@media screen and (max-width: 991px)
+					width 100%
+
+.rslides
+	margin-left auto
+	margin-right auto
