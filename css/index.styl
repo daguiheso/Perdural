@@ -126,6 +126,7 @@ section
 		max-width 40px
 		position relative
 		top 7px
+		height auto
 	// ul
 	// 	padding 0
 	// 	list-style none
@@ -189,11 +190,44 @@ section
 .perduacredito
 	.navbar-brand img
 		position relative
+		height auto
 		top 11px
 		width 135px
+	.work
+		display flex
+		flex-wrap wrap
+		justify-content space-around
+		&__box
+			min-width 299px
+			width 32%
+			overflow hidden
+			border 1px solid #e3e3e3
+			border-bottom 2px solid #3aaf3c
+			border-radius 5px
+			margin-bottom 40px
+			&:hover
+				// border 1px solid rgba(29, 198, 223, 0.7)
+				.img
+					transform scale(1.1)
+			&--img
+				overflow hidden
+				.img
+					width 100%
+					height 198px
+					transition .5s
+					background-size cover !important
+			&--footer
+				background #f8f8f8
+				h2
+					color #535353
+					font-size 1.1em
+					font-weight bold
+					text-align center
+					font-family 'Roboto Slab', serif
 
 .perduoutlet
 	.navbar-brand img
+		height auto
 		position relative
 		top 5px
 		width 52px
