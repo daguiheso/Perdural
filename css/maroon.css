@@ -61,6 +61,10 @@ nav.small {
 .title {
   color: #ff074c;
   font-size: 1.9em;
+  border-bottom: 2px solid #ff074c;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* h4
