@@ -149,6 +149,15 @@ section
 		i
 			color #555
 	#store
+		h2
+			font-size 1.3em
+			text-align center
+			color #969696
+			font-weight bold
+			min-height 44px
+			display flex
+			justify-content center
+			align-items center
 		.caption
 			h3
 				// min-height 78px
@@ -158,6 +167,12 @@ section
 				padding 10px 0
 			a
 				display block
+				&.green
+					background #01e675
+					margin-top 20px
+					box-shadow: 0 5px #4e8459
+					&:hover
+						box-shadow: 0 3px #4e8459
 	.rslides
 		border 2px solid #ddd !important
 		width 100%
@@ -215,6 +230,13 @@ section
 			.text
 				padding 20px 30px 25px
 				margin-top 5px
+				a
+					&.green
+						background #01e675
+						box-shadow: 0 5px #4e8459
+						&:hover
+							box-shadow: 0 3px #4e8459
+
 			h3
 				margin-top 0
 				font-size 1.6em
@@ -285,3 +307,10 @@ section
 .rslides
 	margin-left auto
 	margin-right auto
+
+.nav>li>a {
+	position: relative;
+	display: block;
+	padding-left:11px;
+	padding-right:11px;
+}

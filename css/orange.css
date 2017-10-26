@@ -12,7 +12,7 @@ a:hover,a:focus,a:active,.social-icons i:hover,.twitter_tweet i,.twitter_tweet p
 .navbar-custom .navbar-nav>li>a:hover, .navbar-custom .navbar-nav>li>a:focus,
 .navbar-custom .navbar-nav>li>a:hover,
 .md-content h5 {
-	color: #d8e237;
+	color: #3aaf3c;
   font-weight: 900;
 }
 .btn-custom,.btn-custom-sm,.back-to-top{
@@ -37,7 +37,7 @@ nav.small {
   color: white;
 }
 .navbar-custom .navbar-nav>li>a {
-  color: white;
+  color: #004795;
   font-weight: bold;
 }
 
