@@ -40,6 +40,15 @@
   <link rel="stylesheet" href="css/index.css"/>
   <!-- Template Color-->
   <link rel="stylesheet" type="text/css" href="css/orange.css" media="screen" id="color-opt" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108731228-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-108731228-1');
+  </script>
 </head>
 
 <body data-spy="scroll" data-offset="80" class="perduacredito">
@@ -81,8 +90,6 @@
 			<!-- /.navbar-collapse -->
     </div><!-- /.container -->
   </nav>
-		<br>
-		<br>
 		<br>
 		<br>
 		<br>
@@ -206,7 +213,6 @@
      <script src="js/jquery.min.js"></script>
      <!-- jquery easing -->
      <script src="assets/jquery.easing.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/ResponsiveSlides.js/1.55/responsiveslides.js"></script>
      <!-- Bootstrap -->
      <script src="js/bootstrap.min.js"></script>
      <!-- modal-effect -->
@@ -228,27 +234,5 @@
 
      <!-- Switcher script for demo only -->
 		<script type="text/javascript" src="js/switcher.js"></script>
-		<script>
-			$(".rslides").responsiveSlides({
-				auto: true,             // Boolean: Animate automatically, true or false
-				speed: 500,            // Integer: Speed of the transition, in milliseconds
-				timeout: 3000,          // Integer: Time between slide transitions, in milliseconds
-				pager: false,           // Boolean: Show pager, true or false
-				nav: false,             // Boolean: Show navigation, true or false
-				random: false,          // Boolean: Randomize the order of the slides, true or false
-				pause: false,           // Boolean: Pause on hover, true or false
-				pauseControls: true,    // Boolean: Pause when hovering controls, true or false
-				prevText: "Previous",   // String: Text for the "previous" button
-				nextText: "Next",       // String: Text for the "next" button
-				maxwidth: "540px",           // Integer: Max-width of the slideshow, in pixels
-				navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
-				manualControls: "",     // Selector: Declare custom pager navigation
-				namespace: "rslides",   // String: Change the default namespace used
-				before: function(){},   // Function: Before callback
-				after: function(){}     // Function: After callback
-			});
-		</script>
-
-
   </body>
 </html>

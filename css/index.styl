@@ -75,6 +75,16 @@ section
 		justify-content center
 		align-items center
 		margin-bottom 25px
+.gallery
+	.wrapper
+		position: relative;
+		width: 100%;
+		max-width: 540px
+		margin-left auto
+		margin-right auto
+		.rslides
+			border 2px solid #ddd !important
+			width 100%
 #history
 	.imgP
 		max-width 250px
@@ -173,9 +183,6 @@ section
 					box-shadow: 0 5px #4e8459
 					&:hover
 						box-shadow: 0 3px #4e8459
-	.rslides
-		border 2px solid #ddd !important
-		width 100%
 
 .perduacademy
 	.navbar-brand img
@@ -186,9 +193,6 @@ section
 	h4
 		list-style point
 		font-weight bold
-	// ul
-	// 	padding 0
-	// 	list-style none
 	.products
 		display flex
 		align-items center
@@ -307,10 +311,33 @@ section
 .rslides
 	margin-left auto
 	margin-right auto
+	position relative
+	list-style none
+	overflow hidden
+	width 100%
+	padding 0
 
-.nav>li>a {
-	position: relative;
-	display: block;
-	padding-left:11px;
-	padding-right:11px;
-}
+.nav>li>a
+	position relative
+	display block
+	padding-left 11px
+	padding-right 11px
+
+.rslides1_nav
+	position absolute
+	-webkit-tap-highlight-color rgba(0,0,0,0)
+	top calc(50% + 30.5px)
+	left 2px
+	z-index 99
+	opacity 0.7
+	text-indent -9999px
+	overflow hidden
+	text-decoration none
+	height 61px
+	width 38px
+	background transparent url(../images/themes.gif) no-repeat left top
+	margin-top -45px
+	&.next
+		left auto
+		background-position right top
+		right 2px

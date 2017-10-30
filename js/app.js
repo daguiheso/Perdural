@@ -11,7 +11,7 @@
 /* ------------------------------------------------------------------------------
  This is jquery module for main app
  ------------------------------------------------------------------------------ */
-//var $ = jQuery.noConflict(); //Relinquish jQuery's control of the $ variable. 
+//var $ = jQuery.noConflict(); //Relinquish jQuery's control of the $ variable.
 
 /* Global constants */
 
@@ -46,10 +46,10 @@ jQuery(function ($) {
                 this.$errorName.show(500);
                 this.$errorName.delay(4000);
                 this.$errorName.animate({
-                    height: 'toggle'  
+                    height: 'toggle'
                 }, 500, function() {
                     // Animation complete.
-                }); 
+                });
                 error = true; // change the error state to true
             }
 
@@ -64,23 +64,23 @@ jQuery(function ($) {
                 this.$errorEmail.show(500);
                 this.$errorEmail.delay(4000);
                 this.$errorEmail.animate({
-                    height: 'toggle'  
+                    height: 'toggle'
                 }, 500, function() {
                     // Animation complete.
-                });         
+                });
                 error = true;
             }
 
             var message = this.$contactFormMessage.val(); // get the value of the input field
-            
-            if(message == "" || message == " " || message == "Message") {              
+
+            if(message == "" || message == " " || message == "Message") {
                 this.$errorMessage.show(500);
                 this.$errorMessage.delay(4000);
                 this.$errorMessage.animate({
-                    height: 'toggle'  
+                    height: 'toggle'
                 }, 500, function() {
                     // Animation complete.
-                });            
+                });
                 error = true; // change the error state to true
             }
 
@@ -88,10 +88,10 @@ jQuery(function ($) {
                 this.$errorForm.show(500);
                 this.$errorForm.delay(4000);
                 this.$errorForm.animate({
-                    height: 'toggle'  
+                    height: 'toggle'
                 }, 500, function() {
                     // Animation complete.
-                }); 
+                });
             }
 
             return error;
@@ -123,10 +123,10 @@ jQuery(function ($) {
                         $this.$confirmMessage.show(500);
                         $this.$confirmMessage.delay(4000);
                         $this.$confirmMessage.animate({
-                            height: 'toggle'  
+                            height: 'toggle'
                             }, 500, function() {
-                        });    
-                        
+                        });
+
                         $this.$contactFormName.val('');
                         $this.$contactFormEmail.val('');
                         $this.$contactFormMessage.val('');
@@ -180,7 +180,7 @@ jQuery(function ($) {
             if ($(window).scrollTop() > 80) {
                 this.$nav.addClass('small');
             } else {
-                this.$nav.removeClass('small'); 
+                this.$nav.removeClass('small');
             }
         },
         //document ready event
@@ -215,7 +215,7 @@ jQuery(function ($) {
             this.$backToTop.click(function(){
                 $("html, body").animate({ scrollTop: 0 }, 1000);
                 return false;
-            }); 
+            });
 
             this.$navbarLink.click(function(event) {
                 var $anchor = $(this);
@@ -274,3 +274,11 @@ jQuery(function ($) {
 
 });
 
+$(function(){
+    var navMain = $(".navbar-collapse"); // avoid dependency on #id
+    // "a:not([data-toggle])" - to avoid issues caused
+    // when you have dropdown inside navbar
+    navMain.on("click", "a:not([data-toggle])", null, function () {
+        navMain.collapse('hide');
+    });
+});

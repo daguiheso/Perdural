@@ -39,6 +39,15 @@
   <link rel="stylesheet" href="css/index.css"/>
   <!-- Template Color-->
   <link rel="stylesheet" type="text/css" href="css/maroon.css" media="screen" id="color-opt" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108731228-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-108731228-1');
+  </script>
 </head>
 
 <body data-spy="scroll" data-offset="80" class="perducar">
@@ -317,7 +326,7 @@
 				speed: 500,            // Integer: Speed of the transition, in milliseconds
 				timeout: 3000,          // Integer: Time between slide transitions, in milliseconds
 				pager: false,           // Boolean: Show pager, true or false
-				nav: false,             // Boolean: Show navigation, true or false
+				nav: true,             // Boolean: Show navigation, true or false
 				random: false,          // Boolean: Randomize the order of the slides, true or false
 				pause: true,           // Boolean: Pause on hover, true or false
 				pauseControls: true,    // Boolean: Pause when hovering controls, true or false
@@ -331,7 +340,5 @@
 				after: function(){}     // Function: After callback
 			});
 		</script>
-
-
   </body>
 </html>
